@@ -18,7 +18,7 @@ def combine_movie():
     width  = movie.get(cv2.CAP_PROP_FRAME_WIDTH)
     print(fps, int(width), int(height))
     
-    # 出力先のファイルを開く(s=0.5;fast,s=2;slow)
+    # 出力先のファイルを開く(s=2;fast,s=0.5;slow)
     s=2
     out = cv2.VideoWriter(result, int(fourcc), int(fps*0.5), (int(width), int(height)))
     
