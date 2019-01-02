@@ -4,7 +4,6 @@ import cv2
 
 def combine_movie():
 
-
     # 入力する動画と出力パスを指定。
     target1 = "kenbikyo_video_hatuga_60-3.mp4"
     target2 = "kenbikyo_video4450940952464.mp4"
@@ -21,7 +20,7 @@ def combine_movie():
     
     # 出力先のファイルを開く(s=0.5;fast,s=2;slow)
     s=2
-    out = cv2.VideoWriter(result, int(fourcc), int(fps*2), (int(width), int(height)))
+    out = cv2.VideoWriter(result, int(fourcc), int(fps*0.5), (int(width), int(height)))
     
     # 動画の読み込みと動画情報の取得
     for i in range(1,4):
