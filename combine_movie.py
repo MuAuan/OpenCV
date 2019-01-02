@@ -19,8 +19,8 @@ def combine_movie():
     print(fps, int(width), int(height))
     
     # 出力先のファイルを開く(s=2;fast,s=0.5;slow)
-    s=2
-    out = cv2.VideoWriter(result, int(fourcc), int(fps*0.5), (int(width), int(height)))
+    s=0.5
+    out = cv2.VideoWriter(result, int(fourcc), int(fps*s), (int(width), int(height)))
     
     # 動画の読み込みと動画情報の取得
     for i in range(1,4):
