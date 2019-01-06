@@ -13,12 +13,12 @@ def main():
     print(rows,cols,channels)
 
     timer = cv2.getTickCount()
-    out = cv2.VideoWriter(OUT_FILE_NAME+str(int(timer))+".mp4", \
-              cv_fourcc('M', 'P', '4', 'V'), \
+    out = cv2.VideoWriter(OUT_FILE_NAME+str(int(timer))+".avi", \
+              cv_fourcc('X', 'V', 'I', 'D'), \
               FRAME_RATE, \
               (cols, rows), \
               True)
-    
+    #cv_fourcc('M', 'P', '4', 'V') mp4
     for i in range(1,1619):
         cv2.imshow('combined',dst)
         
